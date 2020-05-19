@@ -1,5 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { UsersService } from './users.service';
+import { User } from '../../entities/user.entity';
 
 @Controller('users')
 export class UsersController {
@@ -10,7 +11,7 @@ export class UsersController {
    * GET /users
    */
   @Get()
-  getAllUsers(): string[] {
+  async getAllUsers(): Promise<User[]> {
     return this.userService.getAllUsers()
   }
 
@@ -19,7 +20,7 @@ export class UsersController {
    * @param id 
    */
   @Get(':id')
-  getUserById(@Param('id') id): string {
+  async getUserById(@Param('id') id): Promise<User> {
     return this.userService.getUserById(id)
   }
 

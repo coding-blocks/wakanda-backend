@@ -3,11 +3,14 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './modules/users/users.module';
 import { SuperheroesModule } from './modules/superheroes/superheroes.module';
-import { ProdDbModule } from './db/prod.db';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { createProdTypeORMConfig } from './app.dbconfig';
+import { Superhero } from './entities/superhero.entity';
+import { User } from './entities/user.entity';
 
 @Module({
   imports: [
-    ProdDbModule,
+    TypeOrmModule.forRoot(createProdTypeORMConfig()),
     UsersModule, 
     SuperheroesModule
   ],

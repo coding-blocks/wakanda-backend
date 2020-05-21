@@ -9,7 +9,7 @@ export function createProdTypeORMConfig(): TypeOrmModuleOptions {
     database: 'wakandadb',
     username: 'wakandauser',
     password: 'wakandapass',
-    entities: ['src/entities/*.entity.ts'],
+    entities: ['src/orm/*.entity.ts'],
     synchronize: true,
     logging: true
   })
@@ -19,7 +19,7 @@ export function createTestTypeORMConfig(): TypeOrmModuleOptions {
   return ({
     type: 'sqlite',
     database: ':memory:',
-    entities: ['src/entities/*.entity.ts'],
+    entities: ['src/orm/*.entity.ts'],
     dropSchema: true,
     synchronize: true,
     logging: true

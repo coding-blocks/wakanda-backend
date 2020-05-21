@@ -1,6 +1,6 @@
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { User } from "../entities/user.entity";
-import { Superhero } from "../entities/superhero.entity";
+import { User } from "@/entities/user.entity";
+import { Superhero } from "@/entities/superhero.entity";
 
 export const ProdDbModule = TypeOrmModule.forRoot({
   type: 'postgres',

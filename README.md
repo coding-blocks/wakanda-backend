@@ -22,7 +22,7 @@ The initial part of the project was build live on Youtube. You can watch the vid
 <table>
     <tr>
         <td>
-<a href="https://www.youtube.com/watch?v=-uNCo-epJG4">
+<a target="_blank" href="https://www.youtube.com/watch?v=-uNCo-epJG4">
     <figure>
         <img width="400" src="https://i.ytimg.com/vi_webp/-uNCo-epJG4/maxresdefault.webp?v=5ed8e63d">
         <br>
@@ -31,7 +31,7 @@ The initial part of the project was build live on Youtube. You can watch the vid
 </a>
         </td>
         <td>
-<a href="https://www.youtube.com/watch?v=EvX_-E2NpPk">
+<a target="_blank" href="https://www.youtube.com/watch?v=EvX_-E2NpPk">
     <figure>
         <img width="400" src="https://i.ytimg.com/vi_webp/EvX_-E2NpPk/maxresdefault.webp?v=5ed8e65a">
         <br>

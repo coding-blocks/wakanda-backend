@@ -16,9 +16,33 @@
 ![Build and Test](https://github.com/coding-blocks/wakanda-backend/workflows/Build%20and%20Test/badge.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6bd692d2bc9e4a2f8cabd1547ef66627)](https://www.codacy.com/gh/coding-blocks/wakanda-backend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coding-blocks/wakanda-backend&amp;utm_campaign=Badge_Grade)
 
-## Description
+## Project Setup & Overview
+The initial part of the project was build live on Youtube. You can watch the videos here to get context. 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<table>
+    <tr>
+        <td>
+<a href="https://www.youtube.com/watch?v=-uNCo-epJG4">
+    <figure>
+        <img width="400" src="https://i.ytimg.com/vi_webp/-uNCo-epJG4/maxresdefault.webp?v=5ed8e63d">
+        <br>
+        <figcaption> ▶️ Part 1: Project Setup</figcaption>
+    </figure>
+</a>
+        </td>
+        <td>
+<a href="https://www.youtube.com/watch?v=EvX_-E2NpPk">
+    <figure>
+        <img width="400" src="https://i.ytimg.com/vi_webp/EvX_-E2NpPk/maxresdefault.webp?v=5ed8e65a">
+        <br>
+        <figcaption> ▶️ Part 2: Models and DI</figcaption>
+    </figure>
+</a>
+        </td>
+    </tr>
+</table>
+
+
 
 ## Installation
 

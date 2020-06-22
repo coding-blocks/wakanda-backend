@@ -13,7 +13,7 @@ export class Superhero {
   ref_code: string
 
   @Column({
-    type: "enum",
+    type: "simple-enum",
     enum: ["inductee", "soldier", "avenger"],
     default: "inductee"
   })

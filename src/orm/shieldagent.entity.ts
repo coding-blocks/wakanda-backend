@@ -15,7 +15,7 @@ export class ShieldAgent {
   contact_no: number
 
   @Column({
-    type: "enum",
+    type: "simple-enum",
     enum: ["director", "commander", "agent"],
     default: "agent"
   })

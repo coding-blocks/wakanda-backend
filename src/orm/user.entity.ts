@@ -1,18 +1,25 @@
-import { Entity, Column, PrimaryColumn, OneToOne, JoinColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
+import { Agent } from "./agent.entity";
 import { Superhero } from "./superhero.entity";
 
-
-@Entity() 
+@Entity("users")
 export class User {
-  
+
   @PrimaryColumn()
   id: number
 
-  @Column({nullable: false, length: 50})
-  username: string
+  @Column()
+  email: string
 
-  @OneToOne(type => Superhero, superhero => superhero.user)
+  @Column()
+  password: string
+
+  @OneToOne(() => Superhero, superhero => superhero.user)
   @JoinColumn()
-  superhero?: Superhero
+  superhero: Superhero
+
+  @OneToOne(() => Agent, agent => agent.user)
+  @JoinColumn()
+  agent: Agent
 
 }
